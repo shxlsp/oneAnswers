@@ -118,10 +118,10 @@ module.exports = function (plop) {
             // 如果从main中联动创建的，就会有store
             const {
                 name,
-                workspaces
+                workspaces: storeWorkspaces
             } = storeData || {};
-            if (workspaces && name) {
-                pubPath = path.join(pubPath, name, workspaces)
+            if (storeWorkspaces && name) {
+                pubPath = path.join(pubPath, name, storeWorkspaces)
             } else {
                 // 如果有输入workspaces
                 pubPath = path.join(pubPath, workspacesName || workspaces?.[0])

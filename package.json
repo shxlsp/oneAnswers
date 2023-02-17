@@ -1,6 +1,6 @@
 {
   "name": "one-answer",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "monorepo工程化工具",
   "main": "./bin/index.js",
   "bin": {
