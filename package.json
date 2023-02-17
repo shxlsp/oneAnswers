@@ -1,5 +1,5 @@
 {
-  "name": "oneAnswer",
+  "name": "one-answer",
   "version": "1.0.10",
   "description": "monorepo工程化工具",
   "main": "./bin/index.js",
