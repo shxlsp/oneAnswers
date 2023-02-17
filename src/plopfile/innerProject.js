@@ -85,7 +85,14 @@ module.exports = function (plop) {
     });
     
     const storeData = store.getData();
-    let workspaces = getPackageJSON().workspaces;
+    let workspaces;
+    try {
+        workspaces = getPackageJSON().workspaces;
+    } catch (error) {
+        if(!storeData.name || !storeData.workspaces){
+            throw error;
+        }
+    } 
 
     if(workspaces?.length > 1){
         prompts.unshift({
